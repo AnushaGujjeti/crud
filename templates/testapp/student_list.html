@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="2px">
+        <tbody style="background-color: dodgerblue;">
+            <thead>
+                <th>NAME</th>
+                <th>AGE</th>
+                <th>CITY</th>
+                <th>MARKS</th>
+            </thead>
+
+            {% for i in student_list %}
+            <tr>
+                <td><h1>{{i.name|capfirst}}</h1></td>
+                <td><h1>{{i.age}}</h1></td>
+                <td><h1>{{i.city|lower}}</h1></td>
+                <td><h1>{{i.marks}}</h1></td>
+            </tr>
+            {% endfor %}
+
+        </tbody>
+
+    </table>
+</body>
+</html>
+
+
